@@ -1,0 +1,75 @@
+@import "variables";
+@import "mixins";
+@import "button";
+
+.c-app {
+  font-size: 100%;
+  @media (min-width: 768px) {
+    width: 47rem;
+  }
+
+  @media (min-width: 992px) {
+    width: 60.5rem,
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+  @include element('header') {
+    @include modifier('main') {
+      font-size: 150%;
+      text-align: center;
+      top: 0;
+      left: 50%;
+      color: $black;
+    }
+    @include modifier('subheader') {
+      font-size: 80%;
+      color: $gallery-subheading-color;
+      text-align: center;
+      line-height: 1.5rem;
+    }
+  }
+
+  @include element('button') {
+    @extend %button;
+    font-size: 100%;
+
+    @include modifier('blue') {
+      background: $blue;
+      &:hover {
+        background: $blue-light;
+      }
+    }
+    @include modifier('blue') {
+      background: $blue;
+      &:hover {
+        background: $blue-light;
+      }
+    }
+    @include modifier('green') {
+      background: $green;
+      &:hover {
+        background: $green-hover;
+      }
+    }
+    @include modifier('orange') {
+      background: $gallery-add-button-color;
+      &:hover {
+        box-shadow: 0 .325rem .432rem rgba(0, 0, 0, .3), 0 0 2.8rem rgba(128, 128, 128, .1) inset;
+        border-color: #8C3700;
+      }
+    }
+    @include modifier('red') {
+      background: $gallery-remove-button-color;
+      &:focus, &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .3), 0 0 .25rem rgba(128, 128, 128, .1) inset;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 .125rem .25rem rgba(0,0,0, .2) inset;
+    }
+  }
+}

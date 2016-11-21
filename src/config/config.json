@@ -1,0 +1,13 @@
+{
+  "events": {
+    "bussy": "bussy"
+  },
+  "api": {
+    "url": "http://localhost:1337/api/v0"
+  },
+  "gallery": {
+    "state": {
+      "scroll": "_application_possition"
+    }
+  }
+}

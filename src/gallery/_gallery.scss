@@ -1,0 +1,25 @@
+@import "./../mixins";
+@import "./../variables";
+
+.c-galery {
+  list-style: none;
+  @include element('output') {
+    margin-left: .3215rem;
+    display: block;
+    float: left;
+    margin: .9375rem;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    box-shadow: 0 .0625rem .12rem $gallery-box-shadow;
+    transition: box-shadow  .3s ease-in-out;
+    .c-rectangle {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      box-shadow: 0 .0625rem .9375rem $gallery-box-shadow-hover;
+    }
+  }
+}

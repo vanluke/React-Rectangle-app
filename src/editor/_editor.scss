@@ -1,0 +1,180 @@
+@import "./../mixins";
+@import "./../variables";
+
+.c-editor {
+  position: fixed;
+  overflow: hidden;
+  text-align: left;
+  background: $editor-bg-color;
+  transition: opacity .25s ease;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+
+  @include element('header') {
+    padding: .15rem .3rem;
+    border-bottom: .0625rem solid $header-color;
+  }
+
+  @include element('close') {
+    cursor: pointer;
+    color: transparent;
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.2rem;
+
+    &:before, &:after {
+      content: "";
+      width: .75rem;
+      border: .0625rem solid $black;
+      position: absolute;
+      top: .75rem;
+      border-radius: .9375rem;
+    }
+    &:before {
+      transform: rotate(45deg);
+      right: .0625rem;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      left: .0625rem;
+    }
+    &:hover {
+      &:before, &:after {
+        border: .0625rem solid $blue-light;
+      }
+    }
+  }
+  @include element('form') {
+    display: flex;
+    min-height: 18.75rem;
+
+    @media (min-width: 798px) {
+      display: inline;
+    }
+    @media (max-width: 700px) {
+      display: block;
+      width: 9.375rem;
+    }
+    @include element('item') {
+      margin: 0 auto;
+      display: inline-flex;
+      margin: .5rem;
+      @media (min-width: 198px) {
+        flex-direction:column;
+        align-items: flex-start;
+      }
+      @media (min-width: 750px) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  @include element('label') {
+    color: $label-color;
+    font-weight: bold;
+    display: block;
+    width: 9.375rem;
+    line-height: 2.5rem;
+    float: left;
+
+    @media (max-width: 698px) {
+      width: 5rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  @include element('range') {
+    &[type="range"] {
+      -webkit-appearance: none;
+      border: .0625rem solid white;
+      width: 9.375rem;
+      &::-webkit-slider-runnable-track {
+        width: 6.25rem;
+        height: .3125rem;
+        background: $rangle-color;
+        border: none;
+        border-radius: .19rem;
+      }
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background: $red;
+        margin-top: -.25rem;
+      }
+      &:focus {
+        outline: none;
+      }
+      &::focus::-webkit-slider-runnable-track {
+        background: $editor-range-fill-color;
+      }
+      &::-moz-range-track {
+        width: 6.25rem;
+        height: .3125rem;
+        background: $rangle-color;
+        border: none;
+        border-radius: .19rem;
+      }
+      &::-moz-range-thumb {
+        border: none;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background: $red;
+      }
+      &::-ms-track {
+        height: .19rem;
+        background: transparent;
+        border-color: transparent;
+        border-width: .375rem 0;
+        color: transparent;
+      }
+      &::-ms-fill-lower {
+        background: $editor-range-fill-lower-color;
+        border-radius: .625rem;
+      }
+      &::-ms-fill-upper {
+        background: $editor-range-fill-color;
+        border-radius: .625rem;
+      }
+      &::-ms-thumb {
+        border: none;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background: $red;
+      }
+      &.--vertical {
+        margin-top: 3.125rem;
+        transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        @media (max-width: 700px) {
+          margin-bottom: 5rem;
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.l-editor {
+  transition: top 2s ease;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  background: $white;
+  border-radius: 0;
+  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
+}

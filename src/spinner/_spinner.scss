@@ -1,0 +1,49 @@
+@import "keyframes";
+@import "./../mixins";
+@import "./../variables";
+
+.c-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 9.375rem;
+  height: 9.375rem;
+  transform: rotate(45deg);
+  animation: rotateit 1.5s ease infinite;
+
+  @include modifier('hidden') {
+    display: none;
+  }
+
+  @include element('square') {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0;
+    position: absolute;
+    @include modifier('top-left') {
+      background: $square-top-left-color;
+      transform: rotate(90deg);
+      left: 3.125rem;
+      top: 0;
+      animation: moveTop 1.5s ease infinite;
+    }
+    @include modifier('top-right') {
+      top: 3.125rem;
+      animation: rotateIt 1.5s ease infinite;
+      background: $square-top-right-color;
+    }
+    @include modifier('bottom-left') {
+      transform: rotate(90deg);
+      left: 3.125rem;
+      top: 6.25rem;
+      animation: rotateIt 1.5s ease infinite;
+      background: $square-bottom-left-color;
+    }
+    @include modifier('bottom-right') {
+      top: 3.125rem;
+      left: 6.25rem;
+      animation: moveBottom 1.5s ease infinite;
+      background: $square-bottom-right-color;
+    }
+  }
+}
