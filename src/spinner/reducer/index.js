@@ -1,1 +1,1 @@
-export { default as spinnerReducer } from './spinner-reducer';
+export { default as spinnerReducer } from 'spinner/reducer/spinner-reducer';

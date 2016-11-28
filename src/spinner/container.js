@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import './_keyframes.scss';
-import './_overlay.scss';
-import './_spinner.scss';
+import 'spinner/_keyframes.scss';
+import 'spinner/_overlay.scss';
+import 'spinner/_spinner.scss';
 
 const SpinnerContainer = ({ children, isVisible }) =>
   (<aside className={isVisible ? 'overlay' : 'c-spinner--hidden'}>

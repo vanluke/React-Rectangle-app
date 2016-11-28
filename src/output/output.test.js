@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithClass,
 } from 'react-addons-test-utils';
-import Output from './output';
+import Output from 'output/output';
 
 describe('Output', () => {
   const styles = {

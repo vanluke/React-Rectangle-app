@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
-import Rectangle from './../output/model';
-import Output from './../output';
-import Editor from './../editor';
-import './_gallery.scss';
+import Rectangle from 'output/model';
+import Output from 'output';
+import Editor from 'editor';
+import 'gallery/_gallery.scss';
 
 const createRectangles = (rectangles, openEditorHandler, removeHandler) => (
   rectangles.map((rect, keyId) => {

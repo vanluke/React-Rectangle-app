@@ -1,2 +1,2 @@
-export { TOGGLE_SPINNER } from './consts';
-export { toggleSpinner } from './actions';
+export { TOGGLE_SPINNER } from 'spinner/actions/consts';
+export { toggleSpinner } from 'spinner/actions/actions';

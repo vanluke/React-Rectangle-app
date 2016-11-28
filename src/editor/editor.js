@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
-import ColorPicker from './react-color-picker';
-import FormRangeItem from './form-range';
-import Output from './../output';
-import FormItem from './form-item';
-import './_editor.scss';
+import ColorPicker from 'editor/react-color-picker';
+import FormRangeItem from 'editor/form-range';
+import Output from 'output';
+import FormItem from 'editor/form-item';
+import 'editor/_editor.scss';
 
 const Editor = (props) => {
   const {

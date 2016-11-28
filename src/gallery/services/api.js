@@ -1,7 +1,7 @@
 import request from 'superagent';
-import Rectangle from '../../output/model';
-import config from '../../config/config.json';
-import rectangleTemplate from '../rectangle.template.json';
+import Rectangle from 'output/model';
+import config from 'config/config.json';
+import rectangleTemplate from 'gallery/rectangle.template.json';
 
 const rectanglesUrl = `${config.api.url}/rect`;
 

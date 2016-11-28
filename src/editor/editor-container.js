@@ -1,6 +1,6 @@
 import React, { PropTypes, PureComponent } from 'react';
-import Editor from './editor';
-import rangeEventPolyfill from './../range-polyfill';
+import Editor from 'editor/editor';
+import rangeEventPolyfill from 'range-polyfill';
 
 export class EditorContainer extends PureComponent {
   static propTypes = {

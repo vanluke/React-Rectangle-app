@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   findRenderedDOMComponentWithClass,
 } from 'react-addons-test-utils';
-import Editor from './editor';
+import Editor from 'editor/editor';
 
 describe('Editor', () => {
   describe('Editor Component', () => {

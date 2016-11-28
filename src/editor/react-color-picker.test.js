@@ -3,7 +3,7 @@ import wrap from 'react-mocha-stateless-test-helper';
 import {
   renderIntoDocument,
 } from 'react-addons-test-utils';
-import ReactColorPicker from './react-color-picker';
+import ReactColorPicker from 'editor/react-color-picker';
 
 describe('Editor', () => {
   describe('ReactColorPicker', () => {

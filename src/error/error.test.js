@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithTag,
 } from 'react-addons-test-utils';
-import Error from './error';
+import Error from 'error/error';
 
 describe('Error', () => {
   describe('components', () => {

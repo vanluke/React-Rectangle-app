@@ -2,4 +2,4 @@ export {
   getRectangles,
   putRectangles,
   deleteRectangle,
-  postRectangle } from './api';
+  postRectangle } from 'gallery/services/api';

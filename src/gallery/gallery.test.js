@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithTag,
 } from 'react-addons-test-utils';
-import Gallery from './gallery';
+import Gallery from 'gallery/gallery';
 
 describe('Gallery', () => {
   describe('components', () => {

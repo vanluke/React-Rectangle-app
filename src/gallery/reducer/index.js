@@ -1,1 +1,1 @@
-export { default as galleryReducer } from './gallery-reducer';
+export { default as galleryReducer } from 'gallery/reducer/gallery-reducer';

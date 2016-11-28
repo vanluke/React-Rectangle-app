@@ -7,7 +7,7 @@ export {
   RECTANGLES_SELECT_ORIGINAL,
   RECTANGLES_UPDATED,
   RECTANGLES_DISCARD,
- } from './consts';
+} from 'gallery/actions/consts';
 export {
   remoteRectanglesFetch,
   remoteRectanglesRemove,
@@ -18,4 +18,4 @@ export {
   remoteRectanglesUpdate,
   removeScrollEventListener,
   restoreRectangle,
- } from './actions';
+} from 'gallery/actions/actions';

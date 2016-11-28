@@ -16,6 +16,13 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
+    }
+  },
   "rules": {
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true }],
     "import/extensions": 0,

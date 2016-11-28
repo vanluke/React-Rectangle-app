@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import reducer from './error-reducer';
-import { HANDLE_ERROR } from '../actions';
+import reducer from 'error/reducer/error-reducer';
+import { HANDLE_ERROR } from 'error/actions';
 
 describe('Error', () => {
   describe('reducer', () => {

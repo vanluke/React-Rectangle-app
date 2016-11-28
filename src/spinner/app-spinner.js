@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
-import SpinnerContainer from './container';
-import SpinnerSquare from './square';
+import SpinnerContainer from 'spinner/container';
+import SpinnerSquare from 'spinner/square';
 
 export const AppSpinner = ({ isVisible }) =>
   (<SpinnerContainer isVisible={isVisible}>

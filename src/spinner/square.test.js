@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithClass,
 } from 'react-addons-test-utils';
-import Square from './square';
+import Square from 'spinner/square';
 
 
 describe('Spinner', () => {

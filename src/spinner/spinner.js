@@ -1,7 +1,7 @@
 import React, { PropTypes, PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { toggleSpinner } from './actions';
-import { AppSpinner } from './app-spinner';
+import { toggleSpinner } from 'spinner/actions';
+import { AppSpinner } from 'spinner/app-spinner';
 
 
 export class SpinnerProvider extends PureComponent {

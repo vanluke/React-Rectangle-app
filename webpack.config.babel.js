@@ -20,6 +20,10 @@ export default {
     chunkFilename: '[id].chunk.js',
   },
 
+  resolve: {
+    modulesDirectories: ['src', 'node_modules'],
+  },
+
   devServer: {
     devServer: {
       contentBase: './public',

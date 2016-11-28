@@ -1,7 +1,7 @@
 import React, { PropTypes, PureComponent } from 'react';
 import { connect } from 'react-redux';
-import Spinner from './spinner';
-import Error from './error';
+import Spinner from 'spinner';
+import Error from 'error';
 
 export class App extends PureComponent {
   static propTypes = {

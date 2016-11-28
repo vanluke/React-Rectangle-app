@@ -7,8 +7,8 @@ import {
   RECTANGLES_SELECT_ORIGINAL,
   RECTANGLES_UPDATED,
   RECTANGLES_DISCARD,
-} from '../actions';
-import Rectangle from '../../output/model';
+} from 'gallery/actions';
+import Rectangle from 'output/model';
 
 const initState = {
   rectangles: [],

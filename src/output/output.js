@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import './_rectangle.scss';
+import 'output/_rectangle.scss';
 
 const Output = ({ styles, onClick, title }) =>
   (<div className="c-rectangle" style={styles} onClick={onClick} title={title} />);

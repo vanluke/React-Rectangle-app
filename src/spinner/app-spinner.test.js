@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithClass,
 } from 'react-addons-test-utils';
-import { AppSpinner } from './app-spinner';
+import { AppSpinner } from 'spinner/app-spinner';
 
 
 describe('Spinner', () => {

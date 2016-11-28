@@ -1,2 +1,2 @@
-export { HANDLE_ERROR } from './consts';
-export { showErrorMessage } from './actions';
+export { HANDLE_ERROR } from 'error/actions/consts';
+export { showErrorMessage } from 'error/actions/actions';

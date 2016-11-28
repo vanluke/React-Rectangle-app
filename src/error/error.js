@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import './_error.scss';
+import 'error/_error.scss';
 
 const Error = ({ error, isVisible }) =>
 (<div className={!isVisible ? 'c-error c-error--hide' : 'c-error'}>

@@ -8,8 +8,8 @@ import {
   RECTANGLES_SELECT_ORIGINAL,
   RECTANGLES_UPDATED,
   RECTANGLES_DISCARD,
-} from '../actions';
-import reducer from './gallery-reducer';
+} from 'gallery/actions';
+import reducer from 'gallery/reducer/gallery-reducer';
 
 describe('Gallery', () => {
   describe('reducer', () => {

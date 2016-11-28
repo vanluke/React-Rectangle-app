@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import { TOGGLE_SPINNER } from './consts';
-import { toggleSpinner } from './actions';
+import { TOGGLE_SPINNER } from 'spinner/actions/consts';
+import { toggleSpinner } from 'spinner/actions/actions';
 
 describe('Spinner actions', () => {
   it('toggle spinner', () => {

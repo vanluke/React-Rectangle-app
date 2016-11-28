@@ -1,1 +1,1 @@
-export { default as configureStore } from './configure-store';
+export { default as configureStore } from 'store/configure-store';

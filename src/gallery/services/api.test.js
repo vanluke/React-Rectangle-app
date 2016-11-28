@@ -5,7 +5,7 @@ import {
   putRectangles,
   deleteRectangle,
   postRectangle,
-} from './api';
+} from 'gallery/services/api';
 
 describe('Gallery', () => {
   let getRequest;

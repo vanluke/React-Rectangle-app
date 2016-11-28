@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import { HANDLE_ERROR } from './consts';
-import { showErrorMessage } from './actions';
+import { HANDLE_ERROR } from 'error/actions/consts';
+import { showErrorMessage } from 'error/actions/actions';
 
 describe('Error', () => {
   describe('actions', () => {

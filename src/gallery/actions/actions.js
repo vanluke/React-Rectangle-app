@@ -7,20 +7,20 @@ import {
   RECTANGLES_SELECT_ORIGINAL,
   RECTANGLES_UPDATED,
   RECTANGLES_DISCARD,
-} from './consts';
+} from 'gallery/actions/consts';
 import {
   postRectangle,
   getRectangles,
   deleteRectangle,
   putRectangles,
-} from '../services';
-import { saveScrollPossition } from '../gallery-state-middleware';
+} from 'gallery/services';
+import { saveScrollPossition } from 'gallery/gallery-state-middleware';
 import {
     createScrollEvent,
     removeScrollEvent,
-    setScrollPossition } from '../scroll-event';
-import { toggleSpinner } from '../../spinner/actions';
-import { showErrorMessage } from '../../error/actions';
+    setScrollPossition } from 'gallery/scroll-event';
+import { toggleSpinner } from 'spinner/actions';
+import { showErrorMessage } from 'error/actions';
 
 export const removeScrollEventListener = () => {
   removeScrollEvent(e => saveScrollPossition(e));

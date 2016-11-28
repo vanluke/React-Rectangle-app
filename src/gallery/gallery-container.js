@@ -10,10 +10,10 @@ import {
   remoteRectanglesUpdate,
   removeScrollEventListener,
   restoreRectangle,
-} from './actions';
-import GalleryComponent from './gallery';
-import Rectangle from './../output/model';
-import { getScrollFromLocalStorage } from './gallery-state-middleware';
+} from 'gallery/actions';
+import GalleryComponent from 'gallery/gallery';
+import Rectangle from 'output/model';
+import { getScrollFromLocalStorage } from 'gallery/gallery-state-middleware';
 
 export class GalleryContainer extends PureComponent {
   static propTypes = {

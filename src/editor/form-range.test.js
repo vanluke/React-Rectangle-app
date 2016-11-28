@@ -5,7 +5,7 @@ import {
   scryRenderedDOMComponentsWithClass,
   findRenderedDOMComponentWithClass,
 } from 'react-addons-test-utils';
-import FormRangeItem from './form-range';
+import FormRangeItem from 'editor/form-range';
 
 describe('Editor', () => {
   describe('FormRangeItem', () => {

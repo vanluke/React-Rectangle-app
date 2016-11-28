@@ -4,7 +4,7 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithClass,
 } from 'react-addons-test-utils';
-import SpinnerContainer from './container';
+import SpinnerContainer from 'spinner/container';
 
 
 describe('Spinner', () => {

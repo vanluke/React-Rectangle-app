@@ -1,4 +1,4 @@
-import { TOGGLE_SPINNER } from '../actions';
+import { TOGGLE_SPINNER } from 'spinner/actions';
 
 const initialState = {
   isVisible: false,

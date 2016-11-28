@@ -1,4 +1,4 @@
-import { HANDLE_ERROR } from '../actions';
+import { HANDLE_ERROR } from 'error/actions';
 
 const initialState = {
   error: undefined,

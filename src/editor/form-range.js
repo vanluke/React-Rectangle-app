@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import FormItem from './form-item';
+import FormItem from 'editor/form-item';
 
 const FormRangeItem = (props) => {
   const {

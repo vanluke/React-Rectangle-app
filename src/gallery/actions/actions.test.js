@@ -4,13 +4,13 @@ import {
   RECTANGLES_SELECT,
   RECTANGLES_SELECT_ORIGINAL,
   RECTANGLES_DISCARD,
- } from './consts';
+} from 'gallery/actions/consts';
 import {
   editorMode,
   selectRectagle,
   selectOriginalRectagle,
   restoreRectangle,
- } from './actions';
+} from 'gallery/actions/actions';
 
 describe('Gallery', () => {
   describe('Action creators', () => {
