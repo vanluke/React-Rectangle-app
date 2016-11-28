@@ -12,15 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab-recruitment.xfive.co/javascript/js-test.git"
+    "url": "git+https://github.com/vanluke/React-Rectangle-app.git"
   },
   "keywords": [
     "jstest"
   ],
   "author": "Lukasz Gonciarz",
   "license": "ISC",
-  "homepage": "https://gitlab-recruitment.xfive.co/javascript/js-test.git#readme",
+  "homepage": "https://github.com/vanluke/React-Rectangle-app#readme",
   "devDependencies": {
+    "app-module-path": "^2.1.0",
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
     "babel-core": "^6.7.5",

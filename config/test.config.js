@@ -13,3 +13,5 @@ Object.keys(window).forEach((key) => {
     global[key] = window[key];
   }
 });
+
+require('app-module-path').addPath('src');
