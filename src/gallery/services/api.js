@@ -5,7 +5,7 @@ import rectangleTemplate from 'gallery/rectangle.template.json';
 
 const rectanglesUrl = `${config.api.url}/rect`;
 
-const createEmptyRectangle = template => JSON.parse(JSON.stringify(template));
+export const createEmptyRectangle = template => JSON.parse(JSON.stringify(template));
 
 export const postRectangle = () => {
   const rect = createEmptyRectangle(rectangleTemplate);

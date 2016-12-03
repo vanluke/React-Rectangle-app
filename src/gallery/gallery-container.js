@@ -61,7 +61,7 @@ export class GalleryContainer extends PureComponent {
     this.editRectangle = this.editRectangle.bind(this);
   }
 
-  async componentDidMount() {
+  async componentWillMount() {
     const { dispatch } = this.props;
     const position = getScrollFromLocalStorage();
     dispatch(await remoteRectanglesFetch(position));

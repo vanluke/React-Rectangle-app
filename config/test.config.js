@@ -1,4 +1,5 @@
 import jsdom from 'jsdom';
+import 'babel-polyfill';
 import './test-ignore-styles';
 
 const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
