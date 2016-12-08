@@ -1,7 +1,7 @@
 {
-  "name": "js-test",
+  "name": "js-react-rectagle-app",
   "version": "1.0.0",
-  "description": "xfive.co test",
+  "description": "ReactJS Redux Sass KOAJS",
   "main": "index.js",
   "scripts": {
     "start:server": "node_modules/.bin/nodemon",
